@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
-# Load the trained model
+# Load the trained model last_model.pkl
 model = None
 try:
     with open("last_model.pkl", "rb") as f:
