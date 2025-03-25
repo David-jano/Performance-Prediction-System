@@ -146,9 +146,9 @@
 
 <?php
 $servername = "localhost";
-$username = "root";  // Replace with your database username
-$password = "";  // Replace with your database password
-$dbname = "warehouse"; // Replace with your database name
+$username = "root"; 
+$password = "";  
+$dbname = "warehouse"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -207,8 +207,6 @@ if (isset($_POST['view'])) {
         echo "<p>No data found in the history.</p>";
     }
 }
-
-$conn->close();  // Close the database connection
 ?>
 
                     </div>
@@ -300,5 +298,4 @@ $conn->close();  // Close the database connection
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
 </html>
